@@ -1,0 +1,74 @@
+  import Navbar from './pages/Navbar'
+  import Hero from './pages/Hero'
+  import About from './pages/About'
+  import Menu from './pages/Menu'
+  import WhoWeAre from './pages/WhoWeAre'
+
+
+  import gsap from 'gsap'
+  import { ScrollTrigger,MorphSVGPlugin,SplitText } from 'gsap/all'
+
+  import { useEffect } from 'react'
+
+  import { pinAndAnimateLogo } from './utils/pinAndAnimateLogo'
+
+
+  gsap.registerPlugin(ScrollTrigger,MorphSVGPlugin, SplitText)
+
+  const App = () => {
+    useEffect(() => {
+      const header = document.querySelector("#navbar");
+      const headerOffset = header.offsetHeight;
+
+      const timelines = [
+        pinAndAnimateLogo({
+          trigger: "#navbar",
+          start: `top+=${headerOffset} top`,
+          end: "+=400",
+          headerOffset,
+          animations: [
+            {target:".logo", vars: { y: 300, scale: 2, ease: "power2.inOut" }},
+
+            
+          ]
+        }),
+        pinAndAnimateLogo({
+          trigger: "#about",
+          start: "top top",
+          end: "+=500",
+          headerOffset,
+          animations: [
+            {target:".logo", vars: { scale:3, ease: "power2.inOut" }}
+          ]
+        }),
+  
+
+
+      ]
+
+      return () => {
+        // Kills the timeline and its associated ScrollTrigger instance
+        timelines.forEach((tl) => tl.revert())
+      };
+    },[])
+    return (
+      <main>
+         {/* Logo positioned globally*/}
+        <div className='logo-wrapper fixed top-4 left-4 z-[100] h-[50px]'>
+          <img 
+            src='/images/logo.png'
+            className='logo h-[40px]'
+            alt="Logo"
+          />
+        </div>
+        <Navbar/>
+        <Hero/>
+        <About/>
+        <WhoWeAre/>
+        <Menu/>
+        <div className='h-screen border-4'></div>
+      </main>
+    )
+  }
+
+  export default App
