@@ -151,11 +151,11 @@ const WhoWeAre = () => {
             </div>
             {/* eigth column */}
 
-            <div className='col col-1 w-[70vw] h-1/2'>
+            <div className='col col-1 w-[50vw] h-1/2'>
               <div className="row h-[200px]">
                 <p className='font-masa'>14/2/2022</p>
               </div>
-              <div className="row bg-blue-400 h-[400px] img-container">
+              <div className="row bg-blue-400 h-[200px] img-container">
                 <img src='/images/img-9.webp' alt='' className='w-full h-full object-cover img-reveal'/>
                 <div className="reveal-mask"></div>
               </div>

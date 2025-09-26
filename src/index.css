@@ -13,22 +13,12 @@
     font-family: Cute-Days;
     src: url("../src/assets/fonts/Cute Days.ttf");
 }
-@font-face{
-    font-family: Space;
-    src: url("../src/assets/fonts/Space Shop.ttf");
-}
-
-@font-face{
-    font-family: Arrow;
-    src: url("../src/assets/fonts/PWNewArrows.ttf");
-}
 
 @theme{
     --font-masa: Masa-Groovy, "sans-serif";
     --font-jember: Jember-Sketch, "sans-serif";
     --font-cute: Cute-Days, "sans-serif";
-    --font-space: Space, "sans-serif";
-    --font-arrow: Arrow, "sans-serif";
+
 }
 
 
@@ -69,14 +59,14 @@ body {
                 
 
     #whoweare {
-        @apply relative w-full h-screen bg-amber-400;
+        @apply relative w-full h-screen;
 
         .wrapper {
-            @apply flex flex-nowrap w-[800vw] h-screen;
+            @apply flex flex-nowrap w-[360vw] h-screen will-change-transform;
         }
         
         .slide {
-            @apply w-[600vw] h-screen bg-[#898c87] flex;
+            @apply w-[360vw] h-screen bg-[#898c87] flex;
         }
         
        
