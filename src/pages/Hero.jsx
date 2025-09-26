@@ -50,7 +50,7 @@ const Hero = () => {
       LottieScrollTrigger({
         //lottie -vars
         container: heroLottieRef.current,
-        path: "/videos/output.json",
+        path: "/videos/nibblehero.json",
   
         //gsap -vars
         scrollTrigger: st,
