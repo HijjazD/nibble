@@ -94,15 +94,29 @@ body {
     }
 
 .img-container {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    /* GPU acceleration */
+    transform: translate3d(0, 0, 0);
+    /* Optimize rendering */
+    contain: layout style paint;
 }
 
 .reveal-mask {
-  position: absolute;
-  inset: 0;   
-  background: #898c87;            /* cover the whole image */     /* or match your section background */
-  transform: translateX(0);
-  will-change: transform; /* GPU hint */
+    position: absolute;
+    inset: 0;   
+    background: #898c87;
+    transform: translateX(0);
+    /* GPU acceleration hints */
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
 }
 
+.img-container img {
+    /* Optimize image rendering */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    /* Prevent layout shifts */
+    contain: layout;
+}
