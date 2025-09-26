@@ -24,7 +24,7 @@
       wheelMultiplier: 0.8, 
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // default easing
       smoothWheel: true,
-      smoothTouch: false,
+      smoothTouch: true,
     })
 
       // 2. RAF loop for Lenis
