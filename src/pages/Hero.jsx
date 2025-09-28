@@ -93,6 +93,12 @@ const Hero = () => {
       { x: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
       "-=0.4"
     )
+
+    .fromTo(".location",
+      { y: 100, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+      "-=0.5"
+    )
       
     return () => {
         // Kills the timeline and its associated ScrollTrigger instance
@@ -126,7 +132,17 @@ const Hero = () => {
 
       </div>
 
-      
+      {/* Location Button at Bottom Center */}
+    <div className="location absolute bottom-10 w-full flex justify-center">
+      <a
+        href="https://maps.app.goo.gl/wZ5JgthkG2HpuyMz5"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="location-btn inline-flex items-center gap-2 px-8 py-3 rounded-full bg-[rgb(255,230,173)] text-black font-semibold hover:bg-white transition-all duration-300 shadow-lg"
+      >
+        📍 Find Us
+      </a>
+    </div>
       
     </section>
   )
