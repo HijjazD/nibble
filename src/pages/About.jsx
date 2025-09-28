@@ -220,7 +220,7 @@ const About = () => {
       <div className='relative w-full h-[2000px]'>
         
         <div className='relative z-10'>
-          <div className='relative w-full h-auto flex justify-center items-center'>
+          <div className='relative w-full h-auto flex flex-col md:flex-row justify-center items-center'>
             <div className='relative flex-1 w-1/2'>
               <div className='relative w-1/2'>
                 <svg 
@@ -250,12 +250,12 @@ const About = () => {
 
           </div>
 
-          <div className='relative w-full h-auto flex' ref={flowerGirl}>
-            <div className='relative w-full flex-1 flex justify-center items-center'>
+          <div className='relative w-full h-auto flex flex-col md:flex-row ' ref={flowerGirl}>
+            <div className='relative w-full flex-1 flex justify-center items-center order-2 md:order-1'>
               <p className='text-center font-cute text-2xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil repudiandae veniam accusamus sed, maiores quasi! Velit doloribus provident cumque?</p>
             </div>
 
-            <div className='relative w-full flex-1'>
+            <div className='relative w-full flex-1 order-1 md:order-2'>
               <div className='relative w-full'>
                 <svg 
                   viewBox="-100 -200 752 671" 
@@ -274,6 +274,7 @@ const About = () => {
               </div>
             </div>
           </div>
+
         </div>
 
       </div>

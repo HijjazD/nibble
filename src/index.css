@@ -54,7 +54,7 @@ body {
     }
 
     #about {
-        @apply w-full h-[3000px] relative bg-[#99b687] pt-20; 
+        @apply w-full h-[3000px] relative bg-[#fff4dc] pt-20; 
     }
                 
 
@@ -66,14 +66,14 @@ body {
         }
         
         .slide {
-            @apply w-[360vw] h-screen bg-[#898c87] flex;
+            @apply w-[360vw] h-screen bg-[#fff4dc] flex;
         }
         
        
     }
 
     #menu {
-        @apply w-full min-h-screen relative; 
+        @apply w-full min-h-screen relative bg-[#fff4dc]; 
 
         
     }
@@ -94,15 +94,29 @@ body {
     }
 
 .img-container {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    /* GPU acceleration */
+    transform: translate3d(0, 0, 0);
+    /* Optimize rendering */
+    contain: layout style paint;
 }
 
 .reveal-mask {
-  position: absolute;
-  inset: 0;   
-  background: #898c87;            /* cover the whole image */     /* or match your section background */
-  transform: translateX(0);
-  will-change: transform; /* GPU hint */
+    position: absolute;
+    inset: 0;   
+    background: #fff4dc;
+    transform: translateX(0);
+    /* GPU acceleration hints */
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
 }
 
+.img-container img {
+    /* Optimize image rendering */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    /* Prevent layout shifts */
+    contain: layout;
+}

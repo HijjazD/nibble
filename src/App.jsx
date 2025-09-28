@@ -12,11 +12,29 @@
 
   import { pinAndAnimateLogo } from './utils/pinAndAnimateLogo'
 
+  import Lenis from 'lenis'
+
 
   gsap.registerPlugin(ScrollTrigger,MorphSVGPlugin, SplitText)
 
   const App = () => {
     useEffect(() => {
+      const lenis = new Lenis({
+      duration: 4.0,
+      wheelMultiplier: 0.8, 
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // default easing
+      smoothWheel: true,
+      smoothTouch: true,
+    })
+
+      // 2. RAF loop for Lenis
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+
+    lenis.on('scroll', ScrollTrigger.update)
       const header = document.querySelector("#navbar");
       const headerOffset = header.offsetHeight;
 
@@ -49,6 +67,7 @@
       return () => {
         // Kills the timeline and its associated ScrollTrigger instance
         timelines.forEach((tl) => tl.revert())
+        lenis.destroy()
       };
     },[])
     return (
