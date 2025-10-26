@@ -24,7 +24,7 @@ const WhoWeAre = () => {
           scrub: true,
           anticipatePin: 1,        
           invalidateOnRefresh: true,
-          refreshPriority: 2, 
+          refreshPriority: 1, 
           markers: true,
           // Add these
           fastScrollEnd: true,
@@ -100,7 +100,7 @@ const WhoWeAre = () => {
               lg:w-60'>
               <div className="row h-[250px]
                 lg:h-60">
-                <p className='font-masa'>14/2/2022</p>
+                <p className='font-alagard'>14/2/2022</p>
               </div>
               <div className="row h-[250px] img-container
                 lg:h-50">
@@ -116,14 +116,14 @@ const WhoWeAre = () => {
                 <div className="reveal-mask"></div>
               </div>
               <div className="row h-[200px] ">
-                <p className='font-masa'>14/2/2022</p>
+                <p className='font-alagard'>14/2/2022</p>
               </div>
             </div>
             {/* fourth column */}
 
             <div className='col col-1 w-[80vw] h-1/2 lg:w-90'>
               <div className="row h-[250px] lg:h-60">
-                <p className='font-masa'>14/2/2022</p>
+                <p className='font-alagard'>14/2/2022</p>
               </div>
               <div className="row bg-blue-400 h-[400px] img-container lg:h-85">
                 <img src='/images/img-4.webp' alt='' className='w-full h-full object-cover img-reveal'/>
@@ -138,14 +138,14 @@ const WhoWeAre = () => {
                 <div className="reveal-mask"></div>
               </div>
               <div className="row h-[300px]">
-                <p className='font-masa'>14/2/2022</p>
+                <p className='font-alagard'>14/2/2022</p>
               </div>
             </div>
             {/* sixth column */}
 
             <div className='col col-1 w-[60vw] h-1/2 lg:w-80'>
               <div className="row h-[250px] lg:h-60">
-                <p className='font-masa'>14/2/2022</p>
+                <p className='font-alagard'>14/2/2022</p>
               </div>
               <div className="row bg-blue-400 h-[200px] img-container">
                 <img src='/images/img-7.webp' alt='' className='w-full h-full object-cover img-reveal'/>
@@ -160,14 +160,14 @@ const WhoWeAre = () => {
                 <div className="reveal-mask"></div>
               </div>
               <div className="row h-[200px]">
-                <p className='font-masa'>14/2/2022</p>
+                <p className='font-alagard'>14/2/2022</p>
               </div>
             </div>
             {/* eigth column */}
 
             <div className='col col-1 w-[70vw] h-1/2 lg:w-80'>
               <div className="row h-[250px]">
-                <p className='font-masa'>14/2/2022</p>
+                <p className='font-alagard'>14/2/2022</p>
               </div>
               <div className="row bg-blue-400 h-[200px] img-container">
                 <img src='/images/img-9.webp' alt='' className='w-full h-full object-cover img-reveal'/>

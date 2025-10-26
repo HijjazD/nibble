@@ -21,7 +21,7 @@ const Navbar = () => {
         
         {/* Right section */}
         <div className="text-amber-50 flex gap-x-4">
-          <a href="#about">About</a>
+          <a href="#about">About Us</a>
           <a href="#home">Home</a>
         </div>
       </div>
@@ -38,9 +38,8 @@ const Navbar = () => {
         {/* Menu items below */}
         <div className="text-amber-50 flex gap-x-6 text-sm">
           <a href="#menu">Menu</a>
+          <a href="#about">About Us</a>
           <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-          <a href="#home">Home</a>
         </div>
       </div>
     </div>

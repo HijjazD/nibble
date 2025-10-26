@@ -21,7 +21,7 @@ const Menu = () => {
                     pin: true,
                     anticipatePin: 1,        
                     invalidateOnRefresh: true,
-                    refreshPriority: 1,   
+                    refreshPriority: 2,   
                     
                 }
             })
@@ -69,12 +69,12 @@ const Menu = () => {
     <section id='menu' >
         <div className='header flex text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full'>
             <div className='letters flex flex-1 justify-center'>
-                <div className='flex-1 font-cute text-4xl'>M</div>
-                <div className='flex-1 font-cute text-4xl'>E</div>
+                <div className='flex-1 font-alagard text-4xl'>M</div>
+                <div className='flex-1 font-alagard text-4xl'>E</div>
             </div>
             <div className='letters flex flex-1'>
-                <div className='flex-1 font-cute text-4xl'>N</div>
-                <div className='flex-1 font-cute text-4xl'>U</div>
+                <div className='flex-1 font-alagard text-4xl'>N</div>
+                <div className='flex-1 font-alagard text-4xl'>U</div>
             </div>
         </div>
         
