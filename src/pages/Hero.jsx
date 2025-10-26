@@ -27,7 +27,7 @@ const Hero = () => {
       } else if (width < 1280) { // Desktop
         return { y: 450, x: 140, scale: 4 };
       } else { // Large desktop
-        return { y: 450, x: -180, scale: 5 };
+        return { y: 450, x: -170, scale: 5 };
       }
     };
 
