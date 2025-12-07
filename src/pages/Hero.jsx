@@ -97,7 +97,7 @@ const Hero = () => {
         trigger: "#navbar",  // use the same trigger as your chars
         start: "bottom top",
         toggleActions: "play none none reverse",
-        markers: true,
+        markers: false,
       }
     })
 
