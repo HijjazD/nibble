@@ -25,7 +25,7 @@ const WhoWeAre = () => {
           anticipatePin: 1,        
           invalidateOnRefresh: true,
           refreshPriority: 1, 
-          markers: true,
+          markers: false,
           // Add these
           fastScrollEnd: true,
           preventOverlaps: true,
