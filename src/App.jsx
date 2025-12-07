@@ -3,7 +3,9 @@
   import About from './pages/About'
   import Menu from './pages/Menu'
   import WhoWeAre from './pages/WhoWeAre'
-
+  import Blog from './pages/Blog'
+import ContactUs from './pages/ContactUs'
+import Footer from './components/Footer'
 
   import gsap from 'gsap'
   import { ScrollTrigger,MorphSVGPlugin,SplitText } from 'gsap/all'
@@ -88,7 +90,9 @@ import MenuThird from './pages/MenuThird'
         <MenuThird/>
         <About/>
         <WhoWeAre/>
-        <div className='h-screen border-4'></div>
+        <Blog/>
+        <ContactUs/>
+        <Footer/>
       </main>
     )
   }
