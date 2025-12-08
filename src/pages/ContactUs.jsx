@@ -24,8 +24,8 @@ function ContactUs() {
 
     // Send email via EmailJS
     emailjs.send(
-      "service_habsfv7",      // <-- replace with your service ID
-      "template_tix6u8g",     // <-- replace with your template ID
+      "service_habsfv7",  
+      "template_tix6u8g",  
       {
         name: formData.name,
         email: formData.email,
@@ -33,7 +33,7 @@ function ContactUs() {
         time: new Date().toLocaleString(),
         message: formData.message,
       },
-      "KmTlUTnxBqfdbDOke"       // <-- replace with your public key
+      "KmTlUTnxBqfdbDOke"      
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
@@ -58,7 +58,7 @@ function ContactUs() {
     {
       icon: Phone,
       title: 'Phone',
-      content: '011-2618-0850',
+      content: '014-621-1418',
       color: 'bg-green-500'
     },
     {
