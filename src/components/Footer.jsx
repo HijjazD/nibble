@@ -83,7 +83,7 @@ function Footer() {
               </li>
               <li className="flex items-center gap-3 text-amber-200">
                 <Phone className="w-5 h-5 text-amber-500" />
-                <span className="text-sm">011-2618-0850</span>
+                <span className="text-sm">014-621-1418</span>
               </li>
               <li className="flex items-center gap-3 text-amber-200">
                 <Mail className="w-5 h-5 text-amber-500" />
