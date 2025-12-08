@@ -64,7 +64,7 @@ function ContactUs() {
     {
       icon: Mail,
       title: 'Email',
-      content: 'email@gmail.com',
+      content: 'nibblesenterprise@gmail.com',
       color: 'bg-blue-500'
     },
     {
