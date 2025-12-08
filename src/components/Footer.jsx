@@ -87,7 +87,7 @@ function Footer() {
               </li>
               <li className="flex items-center gap-3 text-amber-200">
                 <Mail className="w-5 h-5 text-amber-500" />
-                <span className="text-sm">email@gmail.com</span>
+                <span className="text-sm">nibblesenterprise@gmail.com</span>
               </li>
               <li className="flex items-start gap-3 text-amber-200">
                 <Clock className="w-5 h-5 flex-shrink-0 mt-1 text-amber-500" />
