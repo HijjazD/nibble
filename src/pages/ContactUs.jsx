@@ -24,8 +24,8 @@ function ContactUs() {
 
     // Send email via EmailJS
     emailjs.send(
-      "service_t87axeh",      // <-- replace with your service ID
-      "template_ww4xkwg",     // <-- replace with your template ID
+      "service_habsfv7",      // <-- replace with your service ID
+      "template_tix6u8g",     // <-- replace with your template ID
       {
         name: formData.name,
         email: formData.email,
@@ -33,7 +33,7 @@ function ContactUs() {
         time: new Date().toLocaleString(),
         message: formData.message,
       },
-      "Mc6RCxHVmpzOb1c5M"       // <-- replace with your public key
+      "KmTlUTnxBqfdbDOke"       // <-- replace with your public key
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
