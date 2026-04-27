@@ -1,0 +1,262 @@
+.contact-section {
+  background: #fff4dc;
+  padding: 80px 20px;
+}
+
+/* HEADER */
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.badge {
+  display: inline-block;
+  background: #d97706;
+  color: white;
+  padding: 10px 20px;
+  border: 3px solid #78350f;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-header h2 {
+  font-size: 60px;
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  right: -40px;
+  top: -10px;
+  color: #f59e0b;
+  animation: pulse 1.5s infinite;
+}
+
+.color-bars span {
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  margin: 5px;
+}
+
+.color-bars span:nth-child(1){background:#d97706;}
+.color-bars span:nth-child(2){background:#16a34a;}
+.color-bars span:nth-child(3){background:#ef4444;}
+.color-bars span:nth-child(4){background:#3b82f6;}
+
+.contact-header p {
+  font-size: 20px;
+  color: #444;
+}
+
+/* GRID */
+.contact-grid {
+  display: grid;
+  gap: 40px;
+}
+
+@media(min-width: 1024px){
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* VISIT CARD */
+.visit-card {
+  background: white;
+  padding: 30px;
+  border: 4px solid #78350f;
+  border-radius: 20px;
+}
+
+.visit-card h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* VISIT ITEM */
+.visit-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid #fcd34d;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.visit-item:hover {
+  border-color: #d97706;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.icon-box {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: white;
+}
+
+.icon-box.red { background:#ef4444; }
+.icon-box.green { background:#16a34a; }
+.icon-box.blue { background:#3b82f6; }
+.icon-box.amber { background:#d97706; }
+
+
+
+/* ACHIEVEMENT */
+.achievement {
+  margin-top: 20px;
+  background: linear-gradient(to right,#d97706,#b45309);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* FORM */
+.form-card {
+  background: white;
+  padding: 30px;
+  border: 4px solid black;
+  border-radius: 20px;
+}
+
+.form-card h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-card input,
+.form-card textarea {
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: #fef3c7;
+}
+
+.form-card textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.form-card button {
+  padding: 15px;
+  background: linear-gradient(to right, #16a34a, #15803d);
+  color: white;
+  font-weight: bold;
+  border: 3px solid black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-card button:hover {
+  transform: translateY(-3px);
+}
+
+.form-card button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1); opacity:0.6;}
+  50% {transform: scale(1.2); opacity:1;}
+  100% {transform: scale(1); opacity:0.6;}
+}
+
+@media (max-width: 400px) {
+
+  .contact-section {
+    padding: 60px 15px;
+  }
+
+  .contact-header h2 {
+    font-size: 40px;
+  }
+
+  .contact-header p {
+    font-size: 16px;
+  }
+
+  .badge {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .visit-card,
+  .form-card {
+    padding: 20px;
+  }
+
+  .visit-card h3,
+  .form-card h3 {
+    font-size: 22px;
+  }
+
+  .visit-item {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .achievement {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+}
+
+@media (max-width: 330px) {
+
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-header h2 {
+    font-size: 20px;
+  }
+
+  .contact-header p {
+    font-size: 10px;
+  }
+
+  .badge {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .visit-card,
+  .form-card {
+    padding: 0px;
+  }
+
+  .visit-card h3,
+  .form-card h3 {
+    font-size: 22px;
+  }
+
+  .visit-item {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .achievement {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+}

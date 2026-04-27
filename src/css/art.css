@@ -1,0 +1,253 @@
+/* FULL SECTION */
+#art {
+  width: 100%;
+  height: 100%;
+}
+
+/* PARENT */
+.art-parent {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+/* FLEX CONTAINER */
+.customer-art {
+  display: flex;
+}
+
+/* LEFT SIDE */
+.art-left {
+  width: 50%;
+  height: 100vh;
+  background: #fbbf24; /* amber-400 */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* RIGHT SIDE */
+
+
+/* IMAGES BASE */
+.first-img,
+.second-img,
+.third-img,
+.fourth-img {
+  position: relative;
+}
+
+.first-img img,
+.second-img img,
+.third-img img,
+.fourth-img img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+/* INDIVIDUAL POSITIONING */
+
+/* first = default full width */
+.first-img {
+  margin-left: 40px;
+  width: 40%;
+  transform: rotate(8deg);
+}
+
+/* second-img (ml-auto mr-5 w-75 mt-10) */
+.second-img {
+  width: 300px;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 40px;
+  transform: rotate(-8deg);
+}
+
+/* third-img (ml-10 w-50 mt-20) */
+.third-img {
+  width: 40%;
+  margin-left: 40px;
+  margin-top: 150px;
+}
+
+/* fourth-img (ml-auto mr-20 w-50 mt-20) */
+.fourth-img {
+  width: 40%;
+  margin-left: auto;
+  margin-right: 80px;
+  margin-top: 300px;
+  transform: rotate(8deg);
+}
+
+/* RIGHT SIDE */
+.art-right {
+  width: 50%;
+  height: 100vh;
+  background: #fbbf24;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* REMOVE absolute positioning */
+.r-img {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.r-img img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+/* RANDOM (margin-based like left) */
+
+/* slightly right, small top */
+.r1 {
+  width: 40%;
+  margin-left: 60px;
+  margin-top: 40px;
+  transform: rotate(-8deg);
+}
+
+/* push to right */
+.r2 {
+  width: 40%;
+  margin-left: auto;
+  margin-right: 40px;
+  margin-top: 100px;
+  transform: rotate(6deg);
+}
+
+/* back to left but deeper down */
+.r3 {
+  width: 40%;
+  margin-left: 120px;
+  margin-top: 250px;
+  transform: rotate(-12deg);
+}
+
+/* push right again, more spacing */
+.r4 {
+  width: 40%;
+  margin-left: auto;
+  margin-right: 100px;
+  margin-top: 400px;
+  transform: rotate(10deg);
+}
+
+/* HOVER */
+.r-img:hover {
+  transform: scale(1.05) rotate(0deg);
+  z-index: 2;
+}
+
+.customer-art-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* 🔥 this is what actually centers it */
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers horizontally */
+  justify-content: center; /* centers vertically (if height exists) */
+  text-align: center;
+
+  gap: 10px; /* space between text + button */
+}
+
+.customer-art-text p {
+  margin: 0;
+  font-size: 3rem; /* adjust as needed */
+  font-weight: 600;
+  line-height: 1;
+}
+
+.customer-art-text button {
+  margin-top: 10px;
+  padding: 10px 24px;
+
+  border-radius: 999px; /* oval shape */
+  border: 1.5px solid #000;
+
+  background: transparent; /* 🔥 no background */
+  color: #000;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE FIX */
+/* ========================= */
+@media (max-width: 980px) {
+.first-img {
+  width: 70%;
+}
+
+/* second-img (ml-auto mr-5 w-75 mt-10) */
+.second-img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+
+/* third-img (ml-10 w-50 mt-20) */
+.third-img {
+  width: 50%;
+  margin-left: 40px;
+  margin-top: 150px;
+}
+
+/* fourth-img (ml-auto mr-20 w-50 mt-20) */
+.fourth-img {
+  width: 60%;
+  margin-left: auto;
+  margin-right: 80px;
+  margin-top: 300px;
+}
+  
+
+.r1 {
+  width: 60%;
+  margin-left: 60px;
+  margin-top: 40px;
+  transform: rotate(-8deg);
+}
+
+/* push to right */
+.r2 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: 40px;
+  margin-top: 100px;
+  transform: rotate(10deg);
+}
+
+/* back to left but deeper down */
+.r3 {
+  width:  60%;
+  margin-left: 60px;
+  margin-top: 250px;
+  transform: rotate(-12deg);
+}
+
+/* push right again, more spacing */
+.r4 {
+  width:  70%;
+  margin-left: auto;
+  margin-right: 100px;
+  margin-top: 400px;
+  transform: rotate(10deg);
+}
+}

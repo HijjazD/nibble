@@ -1,0 +1,99 @@
+#about{
+  position: relative;
+  height: 100vh;
+}
+
+.about-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* 🔥 this is what actually centers it */
+  transform: translate(-50%, -50%);
+
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+
+
+  clip-path: inset(0 0 0 0%);
+}
+
+.about-left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-270%, -120%); /* move left + slightly up */
+
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+
+  /*  hidden from right */
+  clip-path: inset(0 100% 0 0);
+
+  
+}
+
+.about-right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(150%, 50%); /* move right + slightly down */
+
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+
+  /* hidden from right */
+  clip-path: inset(0 100% 0 0);
+}
+
+@media (max-width: 1000px) {
+    .about-img {
+        width: 120px;
+        height: 160px;
+    }
+  .about-left{
+    width: 120px;
+    height: 160px;
+    transform: translate(-180%, -100%);
+  }
+  .about-right {
+    width: 120px;
+    height: 160px;
+    transform: translate(100%, 40%);
+  }
+}
+
+@media (max-width: 700px) {
+    .about-img {
+        width: 160px;
+        height: 160px;
+    }
+  .about-left{
+    width: 100px;
+    height: 120px;
+    transform: translate(-180%, -100%);
+  }
+  .about-right {
+    width: 80px;
+    height: 140px;
+    transform: translate(70%, 40%);
+  }
+}
+
+@media (max-width: 330px) {
+    .about-img {
+        width: 120px;
+        height: 160px;
+    }
+  .about-left{
+    display: none;
+  }
+  .about-right {
+    display: none;
+  }
+}

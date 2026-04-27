@@ -1,0 +1,298 @@
+.blog-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: #fff4dc;
+  overflow: hidden;
+}
+
+/* Decorative */
+.leaf-deco {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  opacity: 0.2;
+  transform: rotate(-45deg);
+  color: #15803d;
+}
+
+.coffee-deco {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  opacity: 0.2;
+  transform: rotate(12deg);
+  color: #b45309;
+}
+
+/* Container */
+.blog-container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Header */
+.blog-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header-icon {
+  width: 48px;
+  height: 48px;
+  color: #d97706;
+  margin-bottom: 10px;
+}
+
+.blog-header h2 {
+  font-size: 60px;
+  color: #92400e;
+  font-family: cursive;
+}
+
+.divider {
+  width: 120px;
+  height: 4px;
+  background: #d97706;
+  margin: 20px auto;
+}
+
+.blog-header p {
+  font-size: 22px;
+  color: #444;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Grid */
+.blog-grid {
+  display: grid;
+  gap: 30px;
+}
+
+/* Card */
+.blog-card {
+  position: relative;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 4px solid #78350f;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: 0.5s;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Corners */
+.corner-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: #d97706;
+  border-bottom-right-radius: 100%;
+  opacity: 0.2;
+}
+
+.corner-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: #16a34a;
+  border-top-left-radius: 100%;
+  opacity: 0.2;
+}
+
+/* Layout */
+.blog-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .blog-flex {
+    flex-direction: row;
+  }
+}
+
+/* Image */
+.blog-image {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  min-height: 300px;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.7s;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blog-card:hover img {
+  transform: scale(1.1);
+}
+
+.category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #d97706;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.3), transparent);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.blog-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Content */
+.blog-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.meta-item.amber {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.meta-item.green {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.blog-content h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.blog-card:hover h3 {
+  color: #d97706;
+}
+
+.blog-content p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.blog-content a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #d97706;
+  border-bottom: 2px solid #d97706;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.blog-content a:hover {
+  color: #92400e;
+  gap: 15px;
+}
+
+/* Coming Soon */
+.coming-soon {
+  text-align: center;
+  margin-top: 60px;
+  padding: 30px;
+  border: 3px dashed #d97706;
+  border-radius: 20px;
+  background: white;
+}
+
+.coming-soon .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Floating dots */
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.dot1 {
+  top: 25%;
+  right: 40px;
+  width: 10px;
+  height: 10px;
+  background: #d97706;
+}
+
+.dot2 {
+  top: 50%;
+  left: 40px;
+  width: 8px;
+  height: 8px;
+  background: #16a34a;
+  animation-delay: 0.3s;
+}
+
+.dot3 {
+  bottom: 25%;
+  right: 80px;
+  width: 12px;
+  height: 12px;
+  background: #b45309;
+  animation-delay: 0.7s;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
