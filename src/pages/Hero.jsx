@@ -178,7 +178,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
   return (
     <section
       id="hero"
-      className="intro relative w-screen h-full bg-[#aeabaa] overflow-hidden"
+      className="intro relative w-screen bg-[#aeabaa] overflow-hidden"
     >
       <div
         className="hero-video-lottie w-full h-dvh relative z-[-1]"
