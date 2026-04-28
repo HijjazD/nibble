@@ -32,7 +32,6 @@ const About2 = () => {
 
   return (
     <section id="about2" className="relative h-screen w-screen z-50">
-      <h1 className="text-5xl">300</h1>
       <div className="about2-paragraph-wrapper w-full box-border">
         <p className="about2-paragraph font-remington mt-20 text-xl sm:text-7xl text-justify">
           lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae,
