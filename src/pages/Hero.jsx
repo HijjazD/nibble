@@ -203,17 +203,6 @@ const Hero = forwardRef((props, heroContainerRef) => {
         </div>
       </div>
 
-      <div className="location absolute bottom-10 w-full flex justify-center">
-        <a
-          href="https://maps.app.goo.gl/wZ5JgthkG2HpuyMz5"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="location-btn inline-flex items-center gap-2 px-8 py-3 rounded-full bg-[rgb(255,230,173)] text-black font-semibold hover:bg-white transition-all duration-300 shadow-lg font-gameboy"
-        >
-          📍 Find Us
-        </a>
-      </div>
-
       <div className="intro-menu absolute h-screen w-screen bg-[#3c3a36] inset-0 hidden">
         <div className="menu-content h-screen w-full">
           <div className="img-holder">
@@ -233,7 +222,18 @@ const Hero = forwardRef((props, heroContainerRef) => {
         </div>
       </div>
 
-      <div className="svg-container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[calc(100svh-7.5px)] flex flex-col justify-center items-center">
+      <div className="location absolute bottom-10 w-full flex justify-center">
+        <a
+          href="https://maps.app.goo.gl/wZ5JgthkG2HpuyMz5"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="location-btn inline-flex items-center gap-3 px-12 py-5 rounded-full bg-[rgb(255,230,173)] text-black text-lg font-semibold font-gameboy shadow-lg transition-all duration-300 hover:bg-white hover:scale-105 active:scale-95 h-15 w-40"
+        >
+          📍 Find Us
+        </a>
+      </div>
+
+      <div className="svg-container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[calc(100svh-7.5px)] flex flex-col justify-center items-center pointer-events-none">
         {/* svg-top */}
         <div className="svg-row">
           {/* svg Velvet Cream #FDF5E6 */}
@@ -406,7 +406,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
         </div>
       </div>
 
-      <div className="svg-container-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[calc(100svh-7.5px)] flex flex-col justify-center items-center">
+      <div className="svg-container-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[calc(100svh-7.5px)] flex flex-col justify-center items-center pointer-events-none">
         <div className="svg-row"></div>
         <div className="svg-row">
           <svg
