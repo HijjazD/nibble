@@ -67,9 +67,9 @@ const About = () => {
   }, []);
   return (
     <section id="about" className="relative h-screen">
-      <img src="/images/food/fries/Combo-B.webp" className="about-left" />
+      <img src="/images/img-1.webp" className="about-left" />
       <img src="/images/menu.png" className="about-img" />
-      <img src="/images/food/fries/Combo-A.webp" className="about-right" />
+      <img src="/images/img-2.webp" className="about-right" />
     </section>
   );
 };
