@@ -91,7 +91,7 @@ const Menu = () => {
           start: "top+=300 top",
           end: `+=${endScroll}`,
           scrub: true,
-          markers: true,
+          markers: false,
           onLeaveBack: () => {
             gsap.set(".about-title", { opacity: 0, scale: 1 });
           },
