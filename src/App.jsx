@@ -26,13 +26,13 @@ const App = () => {
 
       <Menu />
       <div className="relative h-screen z-[-1]">
-        <h1 className="text-5xl">100</h1>
+        <h1 className="text-5xl"></h1>
       </div>
       <div className="relative h-screen z-[-1]">
-        <h1 className="text-5xl">200</h1>
+        <h1 className="text-5xl"></h1>
       </div>
       <div className="relative h-screen">
-        <h1 className="text-5xl">300</h1>
+        <h1 className="text-5xl"></h1>
       </div>
       <About />
       <About2 />
