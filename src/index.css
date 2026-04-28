@@ -61,11 +61,11 @@
  
 body {
   overflow-x: hidden;
+  height: -webkit-fill-available;
 }
 
-html.fixed{
-  max-height: 100vh;
-  max-height: 100svh;
+html{
+  height: -webkit-fill-available;
 }
 
 .intro {
