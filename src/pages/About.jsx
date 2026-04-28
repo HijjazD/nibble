@@ -43,7 +43,7 @@ const About = () => {
           start: `top+=${about_left_start} center`,
           end: "+=300",
           scrub: true,
-          markers: true,
+          markers: false,
         },
       },
     );
