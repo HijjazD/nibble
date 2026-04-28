@@ -61,17 +61,15 @@
  
 body {
   overflow-x: hidden;
-  min-height: -webkit-fill-available;
+  height: 100%;
 }
 
 html{
-  min-height: -webkit-fill-available;
+  height: 100%;
 }
 
 .intro {
-  min-height: 100vh;
-min-height: 100dvh;
-padding-bottom: env(safe-area-inset-bottom, 72px);
+  min-height: 100%;
 }
 
 
