@@ -43,7 +43,7 @@ const About3 = () => {
         trigger: ".img-trigger",
         start: "top center+=200",
         end: "+=250",
-        markers: true,
+        markers: false,
         scrub: true,
       },
     });
@@ -62,7 +62,7 @@ const About3 = () => {
         trigger: ".img-trigger",
         start: "top+=150 center",
         end: "+=200",
-        markers: true,
+        markers: false,
         scrub: true,
       },
     });
@@ -81,7 +81,7 @@ const About3 = () => {
         trigger: ".img-trigger",
         start: "top+=320 center",
         end: "+=150",
-        markers: true,
+        markers: false,
         scrub: true,
       },
     });
@@ -100,7 +100,7 @@ const About3 = () => {
         trigger: ".img-trigger",
         start: "top+=470 center",
         end: "+=150",
-        markers: true,
+        markers: false,
         scrub: true,
       },
     });
