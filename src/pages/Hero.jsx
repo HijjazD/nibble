@@ -5,12 +5,15 @@ import { ScrollTrigger } from "gsap/all";
 
 const Hero = forwardRef((props, heroContainerRef) => {
   useEffect(() => {
-    const setHeight = () => {
-      const currentHeight = window.innerHeight;
-      document.body.style.height = `${currentHeight}px`;
+    const setVH = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
     };
-    window.addEventListener("resize", setHeight);
-    setHeight();
+
+    setVH();
+
+    window.addEventListener("resize", setVH);
+    window.addEventListener("orientationchange", setVH);
 
     const id = requestAnimationFrame(() => {
       document.querySelectorAll(".svg-row svg path").forEach((originalPath) => {
@@ -180,7 +183,8 @@ const Hero = forwardRef((props, heroContainerRef) => {
 
     return () => {
       cancelAnimationFrame(id);
-      window.removeEventListener("resize", setHeight);
+      window.removeEventListener("resize", setVH);
+      window.removeEventListener("orientationchange", setVH);
     };
   }, []);
   return (
@@ -189,7 +193,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
       className="intro relative w-screen bg-[#aeabaa] overflow-hidden"
     >
       <div
-        className="hero-video-lottie w-full h-svh relative z-[-1]"
+        className="hero-video-lottie w-full h-[calc(var(--vh)*100)] relative z-[-1]"
         ref={heroContainerRef}
       ></div>
       <div className="noisy absolute inset-0 bg-[url('/images/noise.png')] " />
@@ -211,7 +215,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
         </div>
       </div>
 
-      <div className="intro-menu absolute h-svh w-screen bg-[#3c3a36] inset-0 hidden">
+      <div className="intro-menu absolute h-[calc(var(--vh)*100)] w-screen bg-[#3c3a36] inset-0 hidden">
         <div className="menu-content h-svh w-full">
           <div className="img-holder">
             <img src="/images/menu.png" alt="" />
@@ -241,7 +245,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
         </a>
       </div>
 
-      <div className="svg-container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[calc(100svh-7.5px)] flex flex-col justify-center items-center pointer-events-none">
+      <div className="svg-container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[calc(var(--vh)*100)] flex flex-col justify-center items-center pointer-events-none">
         {/* svg-top */}
         <div className="svg-row">
           {/* svg Velvet Cream #FDF5E6 */}
@@ -414,7 +418,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
         </div>
       </div>
 
-      <div className="svg-container-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[calc(100svh-7.5px)] flex flex-col justify-center items-center pointer-events-none">
+      <div className="svg-container-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[calc(var(--vh)*100)] flex flex-col justify-center items-center pointer-events-none">
         <div className="svg-row"></div>
         <div className="svg-row">
           <svg
