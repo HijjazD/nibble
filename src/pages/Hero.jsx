@@ -10,7 +10,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
         ? window.visualViewport.height
         : window.innerHeight;
 
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
+      document.documentElement.style.setProperty("--vh", `${vh*0.001}px`);
     };
 
     setVH();
