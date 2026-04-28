@@ -178,10 +178,10 @@ const Hero = forwardRef((props, heroContainerRef) => {
   return (
     <section
       id="hero"
-      className="intro relative w-screen h-dvh bg-[#aeabaa] overflow-hidden"
+      className="intro relative w-screen h-full bg-[#aeabaa] overflow-hidden"
     >
       <div
-        className="hero-video-lottie w-full h-screen relative z-[-1]"
+        className="hero-video-lottie w-full h-dvh relative z-[-1]"
         ref={heroContainerRef}
       ></div>
       <div className="noisy absolute inset-0 bg-[url('/images/noise.png')] " />
@@ -203,8 +203,8 @@ const Hero = forwardRef((props, heroContainerRef) => {
         </div>
       </div>
 
-      <div className="intro-menu absolute h-screen w-screen bg-[#3c3a36] inset-0 hidden">
-        <div className="menu-content h-screen w-full">
+      <div className="intro-menu absolute h-dvh w-screen bg-[#3c3a36] inset-0 hidden">
+        <div className="menu-content h-dvh w-full">
           <div className="img-holder">
             <img src="/images/menu.png" alt="" />
           </div>
