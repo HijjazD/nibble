@@ -5,6 +5,13 @@ import { ScrollTrigger } from "gsap/all";
 
 const Hero = forwardRef((props, heroContainerRef) => {
   useEffect(() => {
+    const setHeight = () => {
+      const currentHeight = window.innerHeight;
+      document.body.style.height = `${currentHeight}px`;
+    };
+    window.addEventListener("resize", setHeight);
+    setHeight();
+
     const id = requestAnimationFrame(() => {
       document.querySelectorAll(".svg-row svg path").forEach((originalPath) => {
         const borderPath = originalPath.cloneNode(true);
@@ -173,6 +180,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
 
     return () => {
       cancelAnimationFrame(id);
+      window.removeEventListener("resize", setHeight);
     };
   }, []);
   return (
@@ -181,7 +189,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
       className="intro relative w-screen bg-[#aeabaa] overflow-hidden"
     >
       <div
-        className="hero-video-lottie w-full min-h-full relative z-[-1]"
+        className="hero-video-lottie w-full h-svh relative z-[-1]"
         ref={heroContainerRef}
       ></div>
       <div className="noisy absolute inset-0 bg-[url('/images/noise.png')] " />
@@ -203,8 +211,8 @@ const Hero = forwardRef((props, heroContainerRef) => {
         </div>
       </div>
 
-      <div className="intro-menu absolute min-h-full w-screen bg-[#3c3a36] inset-0 hidden">
-        <div className="menu-content h-dvh w-full">
+      <div className="intro-menu absolute h-svh w-screen bg-[#3c3a36] inset-0 hidden">
+        <div className="menu-content h-svh w-full">
           <div className="img-holder">
             <img src="/images/menu.png" alt="" />
           </div>
