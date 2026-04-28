@@ -61,14 +61,15 @@
  
 body {
   overflow-x: hidden;
+ height: -webkit-fill-available;
 }
 
 html{
-  height: 100%;
+  height: -webkit-fill-available;
 }
 
 .intro {
-  min-height: 100%;
+  height: calc(var(--vh) * 100);
 }
 
 
