@@ -216,7 +216,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
       </div>
 
       <div className="intro-menu absolute h-[calc(var(--vh)*100)] w-screen bg-[#3c3a36] inset-0 hidden">
-        <div className="menu-content h-svh w-full">
+        <div className="menu-content h-[calc(var(--vh)*100)] w-full">
           <div className="img-holder">
             <img src="/images/menu.png" alt="" />
           </div>
