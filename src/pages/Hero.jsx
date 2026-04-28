@@ -227,7 +227,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
           href="https://maps.app.goo.gl/wZ5JgthkG2HpuyMz5"
           target="_blank"
           rel="noopener noreferrer"
-          className="location-btn inline-flex items-center gap-3 px-12 py-5 rounded-full bg-[rgb(255,230,173)] text-black text-lg font-semibold font-gameboy shadow-lg transition-all duration-300 hover:bg-white hover:scale-105 active:scale-95 h-15 w-40"
+          className="location-btn inline-flex items-center gap-3 px-12 py-5 rounded-full bg-[rgb(255,230,173)] text-black text-lg font-semibold font-gameboy shadow-lg transition-all duration-300 hover:bg-white hover:scale-105 active:scale-95 h-15"
         >
           📍 Find Us
         </a>
