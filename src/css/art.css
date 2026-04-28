@@ -20,7 +20,7 @@
 .art-left {
   width: 50%;
   height: 100vh;
-  background: #fbbf24; /* amber-400 */
+  background: #fff4dc; /* amber-400 */
   display: flex;
   flex-direction: column;
   position: relative;
@@ -84,7 +84,7 @@
 .art-right {
   width: 50%;
   height: 100vh;
-  background: #fbbf24;
+  background: #fff4dc;
 
   display: flex;
   flex-direction: column;
