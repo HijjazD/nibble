@@ -8,7 +8,6 @@ const Hero = forwardRef((props, heroContainerRef) => {
     const setVH = () => {
       const vh = (window.visualViewport?.height ?? window.innerHeight) * 0.01;
       document.documentElement.style.setProperty("--vh", `${vh}px`);
-      ScrollTrigger.refresh();
     };
 
     window.visualViewport?.addEventListener("resize", setVH);
