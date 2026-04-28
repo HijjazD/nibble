@@ -17,7 +17,7 @@ const Art = () => {
         anticipatePin: 1,
         invalidateOnRefresh: true,
         refreshPriority: 1,
-        markers: true,
+        markers: false,
       });
 
       gsap.fromTo(
