@@ -159,38 +159,38 @@ const Art = () => {
           {/* LEFT SIDE */}
           <div className="art-left">
             <div className="first-img">
-              <img src="/images/food/fries/Combo-A.webp" />
+              <img src="/images/img-1.webp" />
             </div>
 
             <div className="second-img">
-              <img src="/images/food/fries/Poppers.webp" />
+              <img src="/images/img-2.webp" />
             </div>
 
             <div className="third-img">
-              <img src="/images/food/croissant/Croissant.webp" />
+              <img src="/images/img-3.webp" />
             </div>
 
             <div className="fourth-img">
-              <img src="/images/food/fries/Nuggets.webp" />
+              <img src="/images/img-4.webp" />
             </div>
           </div>
 
           {/* RIGHT SIDE */}
           <div className="art-right">
             <div className="r-img r1">
-              <img src="/images/food/fries/Combo-A.webp" />
+              <img src="/images/img-5.webp" />
             </div>
 
             <div className="r-img r2">
-              <img src="/images/food/fries/Poppers.webp" />
+              <img src="/images/img-6.webp" />
             </div>
 
             <div className="r-img r3">
-              <img src="/images/food/croissant/Croissant.webp" />
+              <img src="/images/img-7.webp" />
             </div>
 
             <div className="r-img r4">
-              <img src="/images/food/fries/Nuggets.webp" />
+              <img src="/images/img-8.webp" />
             </div>
           </div>
         </div>
