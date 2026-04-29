@@ -91,7 +91,7 @@ const Menu = () => {
           start: "top+=300 top",
           end: `+=${endScroll}`,
           scrub: true,
-          markers: false,
+          markers: true,
           onLeaveBack: () => {
             gsap.set(".about-title", { opacity: 0, scale: 1 });
           },
@@ -155,6 +155,10 @@ const Menu = () => {
               </button>
             ))}
           </nav>
+
+          <div className="keep-scrolling text-base md:text-xl lg:text-2xl">
+            Keep Scrolling ↓
+          </div>
         </div>
       ) : (
         <>
