@@ -23,6 +23,23 @@
   cursor: pointer;
 }
 
+.menu-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-text .underline {
+  width: 100%;
+  height: 2px;
+  background: #f97316;
+  transform: scaleX(0);
+  transform-origin: center;
+  margin-top: 4px;
+}
+
+
 .menu-toggle p {
   color: white;
   position: absolute;
