@@ -4,6 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 const Navbar = ({ heroContainerRef }) => {
+  const logoRef = useRef(null);
+  const menuTextRef = useRef(null);
+
   const menuToggleRef = useRef(null);
   const menuOverlayRef = useRef(null);
   const menuContentRef = useRef(null);
@@ -169,11 +172,63 @@ const Navbar = ({ heroContainerRef }) => {
     });
   };
 
+  useEffect(() => {
+    if (!heroContainerRef?.current) return;
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: heroContainerRef.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    // Fade out + move "Nibbles"
+    tl.to(
+      logoRef.current,
+      {
+        y: -50,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+      },
+      0,
+    );
+
+    tl.to(
+      menuToggleRef.current.querySelectorAll("p"),
+      {
+        color: "#f97316",
+        scale: 1.1,
+        letterSpacing: "1px",
+        duration: 1,
+        ease: "power2.out",
+      },
+      0,
+    );
+    tl.to(
+      menuToggleRef.current.querySelectorAll(".underline"),
+      {
+        scaleX: 1,
+        duration: 1,
+        ease: "power2.out",
+      },
+      0,
+    );
+  }, []);
+
   return (
     <section id="navbar">
       <nav>
         <div className="logo">
-          <a href="#">Nibbles</a>
+          <a
+            ref={logoRef}
+            href="#"
+            className="text-3xl md:text-5xl font-kiwi text-[#fff4dc]"
+          >
+            Nibbles
+          </a>
         </div>
 
         <div
@@ -184,8 +239,25 @@ const Navbar = ({ heroContainerRef }) => {
             isOpen ? closeMenu() : openMenu();
           }}
         >
-          <p id="menu-open">Menu</p>
-          <p id="menu-close">Close</p>
+          <div className="menu-text">
+            <p
+              id="menu-open"
+              className="text-2xl md:text-4xl font-kiwi text-[#fff4dc]"
+            >
+              Menu
+            </p>
+            <span className="underline"></span>
+          </div>
+
+          <div className="menu-text">
+            <p
+              id="menu-close"
+              className="text-2xl md:text-4xl font-kiwi text-[#fff4dc]"
+            >
+              Close
+            </p>
+            <span className="underline"></span>
+          </div>
         </div>
       </nav>
 
