@@ -391,15 +391,15 @@ const Navbar = ({ heroContainerRef }) => {
           <div className="menu-footer h-20 bg-gray-300">
             <div className="col-lg">
               <a href="#" className="text-4xl">
-                Run Sequence
+                
               </a>
             </div>
             <div className="col-sm">
               <a href="#" className="text-4xl">
-                Origin
+                
               </a>
               <a href="#" className="text-4xl">
-                Join Signal
+                
               </a>
             </div>
           </div>
