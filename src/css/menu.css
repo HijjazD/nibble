@@ -184,3 +184,30 @@
     font-size: 1.125rem;
   }
 }
+
+.keep-scrolling {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: rgba(0, 0, 0, 0.6);
+  font-family: sans-serif;
+
+  opacity: 0.8;
+  animation: bounceScroll 1.8s infinite;
+}
+
+/* subtle bounce animation */
+@keyframes bounceScroll {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 6px);
+  }
+}
