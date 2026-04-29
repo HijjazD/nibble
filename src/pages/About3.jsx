@@ -94,24 +94,7 @@ const About3 = () => {
       height: 80,
     });
 
-    const tl4 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".img-trigger",
-        start: "top+=470 center",
-        end: "+=150",
-        markers: false,
-        scrub: true,
-      },
-    });
-
-    tl4.to(".img-about3-fourth", {
-      flex: flex,
-      height: height,
-    });
-    tl4.to(".img-about3-fourth", {
-      flex: 0,
-      height: 80,
-    });
+    
 
     // gsap.fromTo('.img-about4-first',
     // {
