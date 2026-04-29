@@ -36,7 +36,6 @@ const About3 = () => {
     gsap.set(".img-about3-first", { height: 80 });
     gsap.set(".img-about3-second", { height: 80 });
     gsap.set(".img-about3-third", { height: 80 });
-    gsap.set(".img-about3-fourth", { height: 80 });
 
     const tl = gsap.timeline({
       scrollTrigger: {
