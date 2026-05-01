@@ -32,11 +32,10 @@ const About = () => {
 
     gsap.fromTo(
       ".about-left",
-      { clipPath: "inset(0 100% 0 0)", scale: 2 },
+      { clipPath: "inset(0 100% 0 0)"},
 
       {
         clipPath: "inset(0 0% 0 0)",
-        scale: 1,
         ease: "none",
         scrollTrigger: {
           trigger: "#about",
