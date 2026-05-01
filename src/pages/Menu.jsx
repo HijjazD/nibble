@@ -91,7 +91,7 @@ const Menu = () => {
           start: "top+=300 top",
           end: `+=${endScroll}`,
           scrub: true,
-          markers: false,
+          markers: true,
           onLeaveBack: () => {
             gsap.set(".about-title", { opacity: 0, scale: 1 });
           },
@@ -108,7 +108,7 @@ const Menu = () => {
       tl2.to(
         ".about-title",
         {
-          opacity: 0.1,
+          opacity: 0.2,
         },
         ">+10",
       );
@@ -263,9 +263,9 @@ const Menu = () => {
         </>
       )}
 
-      <div className="about-overlay bg-amber-900 absolute inset-0 h-screen w-screen z-50"></div>
+      <div className="about-overlay bg-[#2A2A33] absolute inset-0 h-screen w-screen z-50"></div>
 
-      <div className="about-title absolute top-1/2 left-1/2 -translate-x-1/2 z-51 text-2xl">
+      <div className="about-title absolute top-1/2 left-1/2 -translate-x-1/2 z-51 text-[rgb(83,35,151)] text-2xl md:text-5xl font-jember">
         <h1>About</h1>
       </div>
     </section>
