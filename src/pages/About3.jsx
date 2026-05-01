@@ -80,7 +80,7 @@ const About3 = () => {
         trigger: ".img-trigger",
         start: "top+=320 center",
         end: "+=150",
-        markers: true,
+        markers: false,
         scrub: true,
       },
     });
