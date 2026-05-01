@@ -80,7 +80,7 @@ const About3 = () => {
         trigger: ".img-trigger",
         start: "top+=320 center",
         end: "+=150",
-        markers: false,
+        markers: true,
         scrub: true,
       },
     });
@@ -93,8 +93,6 @@ const About3 = () => {
       flex: 0,
       height: 80,
     });
-
-    
 
     // gsap.fromTo('.img-about4-first',
     // {
@@ -125,37 +123,38 @@ const About3 = () => {
 
   return (
     <section className="about3 min-h-screen z-50 relative">
-      <h1 className="text-5xl md:text-8xl font-medium text-center mb-15 font-alagard">
+      <h1 className="text-5xl md:text-8xl font-medium text-center mb-15 font-alagard pl-15 text-gray-400">
         Our Team
       </h1>
+
       <div className="img-trigger"></div>
       <div className="team-container">
         <div className="item item-1">
-          <div className="word w1">Mysara</div>
+          <div className="word w1 font-remington text-gray-300">Mysara</div>
           <img
             src="/images/ourteam/Mysara.jpg"
             className="img-about3-first bg-black overflow-hidden flex-0 transition-all duration-1000 ease-[cubic-bezier(0.075,0.82,0.165,1)]"
           />
 
-          <div className="word w2">Elysha</div>
+          <div className="word w2 font-remington text-gray-300">Elysha</div>
         </div>
 
         <div className="item item-2">
-          <div className="word w1">Wan</div>
+          <div className="word w1 font-remington text-gray-300">Wan</div>
           <img
             src="/images/ourteam/Wan.jpg"
             className="img-about3-second bg-black overflow-hidden flex-0 transition-all duration-1000 ease-[cubic-bezier(0.075,0.82,0.165,1)]"
           />
-          <div className="word w2">Muhd</div>
+          <div className="word w2 font-remington text-gray-300">Muhd</div>
         </div>
 
         <div className="item item-3">
-          <div className="word w1">Haikal</div>
+          <div className="word w1 font-remington text-gray-300">Haikal</div>
           <img
             src="/images/menu.png"
             className="img-about3-third bg-black overflow-hidden flex-0 transition-all duration-1000 ease-[cubic-bezier(0.075,0.82,0.165,1)]"
           />
-          <div className="word w2">Iman</div>
+          <div className="word w2 font-remington text-gray-300">Iman</div>
         </div>
 
         {/* <div className="item item-4">
