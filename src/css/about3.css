@@ -22,14 +22,14 @@ padding: 0.125em 0;
   align-items: center;
   gap: 40px;
   font-size: 80px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff4dc;
   cursor: pointer;
 transition: all 0.3s ease-in-out;
 }
 
 
 .item:nth-child(1) {
-  border-top: 2px solid #000;
+  border-top: 2px solid #fff4dc;
 }
 
 
@@ -65,7 +65,7 @@ text-align: right;
     align-items: center;
     gap: 20px;
     font-size: 30px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #fff4dc;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -83,7 +83,7 @@ text-align: right;
     align-items: center;
     gap: 10px;
     font-size: 30px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #fff4dc;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
