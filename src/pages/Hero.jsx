@@ -279,7 +279,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
           >
             <path
               d="M180 180H3180"
-              stroke="#3B823E"
+              stroke="#949450"
               strokeWidth="360"
               strokeMiterlimit="3.8637"
               strokeLinecap="round"
@@ -318,7 +318,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
           >
             <path
               d="M180 180H3180"
-              stroke="#7A78FF"
+              stroke="#725094"
               strokeWidth="360"
               strokeMiterlimit="3.8637"
               strokeLinecap="round"
@@ -336,7 +336,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
           >
             <path
               d="M180 180H3180"
-              stroke="#C0DFFE"
+              stroke="#29294C"
               strokeWidth="360"
               strokeMiterlimit="3.8637"
               strokeLinecap="round"
@@ -364,7 +364,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
 
         {/* svg-bottom */}
         <div className="svg-row">
-          {/* svg Acid Pink #FF1493 */}
+          {/* svg gray #2A2A33 */}
           <svg
             width="3360"
             height="360"
@@ -375,7 +375,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
           >
             <path
               d="M180 180H3180"
-              stroke="#FF1493"
+              stroke="#2A2A33"
               strokeWidth="360"
               strokeMiterlimit="3.8637"
               strokeLinecap="round"
@@ -411,7 +411,7 @@ const Hero = forwardRef((props, heroContainerRef) => {
           >
             <path
               d="M180 180H3180"
-              stroke="#00FFFF"
+              stroke="#fff4dc"
               strokeWidth="360"
               strokeMiterlimit="3.8637"
               strokeLinecap="round"
