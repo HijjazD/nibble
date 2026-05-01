@@ -8,7 +8,7 @@ const About2 = () => {
   useEffect(() => {
     const textAnimation = () => {
       const split = new SplitText(".about2-paragraph", {
-        type: "chars words",
+        type: "chars",
       });
 
       gsap.from(split.chars, {
@@ -32,8 +32,9 @@ const About2 = () => {
 
   return (
     <section id="about2" className="relative h-screen w-screen z-50">
+      <h1 className="text-5xl">300</h1>
       <div className="about2-paragraph-wrapper w-full box-border">
-        <p className="about2-paragraph font-remington mt-20 text-xl sm:text-7xl text-justify">
+        <p className="about2-paragraph font-remington mt-10 text-4xl md:text-7xl text-amber-50 pl-5 pr-5 md:pl-15 md:pr-15 text-justify">
           lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae,
           sequi distinctio modi dicta delectus repellat repellendus nobis
           veritatis qui et beatae doloribus aliquid expedita tempore. nobis
