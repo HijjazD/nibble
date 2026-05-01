@@ -125,7 +125,9 @@ const About3 = () => {
 
   return (
     <section className="about3 min-h-screen z-50 relative">
-      <h1 className="text-3xl font-medium">Our Team</h1>
+      <h1 className="text-5xl md:text-8xl font-medium text-center mb-15 font-alagard">
+        Our Team
+      </h1>
       <div className="img-trigger"></div>
       <div className="team-container">
         <div className="item item-1">
